@@ -119,11 +119,8 @@
 <hr width="100%" size="2">
 <br>
 
-<p>
-<strong>Confusion matrices of the best model :</strong>
-</p>
 <div align="center">
-  <img height="200" src="https://github.com/shreyjain99/Quora-Question-Pair-Similarity/blob/main/src%20files/image.png"/>
+  <img height="200" src="https://github.com/shreyjain99/Personalized-Cancer-Diagnosis/blob/main/src%20files/cancer-diagnostics-market.jpg"/>
 </div>
 
 <br>
@@ -132,8 +129,10 @@
 <strong>Future Scope :</strong>
 </p>
 <ol>
-<li>Try out models (Logistic regression, Linear-SVM) with simple TF-IDF vectors instead of TD_IDF weighted word2Vec. </li>
-<li>Perform hyperparameter tuning of XgBoost models using RandomsearchCV with vectorizer as TF-IDF W2V to reduce the log-loss.</li>
+<li>Apply All the models with tf-idf features (Replace CountVectorizer with tfidfVectorizer and run the same cells) </li>
+<li>Instead of using all the words in the dataset, use only the top 1000 words based of tf-idf values</li>
+<li>Apply Logistic regression with CountVectorizer Features, including both unigrams and bigrams </li>
+<li>Try any of the feature engineering techniques discussed in the course to reduce the CV and test log-loss to a value less than 1.0</li>
 </ol>
 
 <hr width="100%" size="2">
