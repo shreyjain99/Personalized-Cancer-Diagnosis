@@ -85,69 +85,31 @@
   
   <br>
 
-  <h3 align= "center"><strong>Reading Data and Basic Stats</strong></h3>
-  <p align= "center"><em> - Total number of unique questions </em></p>
-  <p align= "center"><em> - Checking for Duplicates </em></p>
-  <p align= "center"><em> - Number of occurrences of each question </em></p>
-  <p align= "center"><em> - Checking for NULL values </em></p>
+  <h3 align= "center"><strong>Exploratory Data Analysis</strong></h3>
+  <p align= "center"><em> - Basic text preprocessing like removal of stopwords, removing extra spaces, lower casing text etc. </em></p>
+  <p align= "center"><em> - test, train and cross validation split </em></p>
+  <p align= "center"><em> - Univariate analysis </em></p>
   
   <div align= "center">|</div>
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
-  <h3 align= "center"><strong>Basic Feature Extraction (before cleaning) </strong></h3>
-  <p align= "center"><em> <strong> Constructing new features like :  </strong></em></p>
-  <p align= "center"><em> 1. freq_qid1 = Frequency of qid1's </em></p>
-  <p align= "center"><em> 2. freq_qid2 = Frequency of qid2's </em></p>
-  <p align= "center"><em> 3. q1len = Length of q1 </em></p>
-  <p align= "center"><em> 4. q2len = Length of q2 </em></p>
-  <p align= "center"><em> 5. q1_n_words = Number of words in Question 1 </em></p>
-  <p align= "center"><em> 6. q2_n_words = Number of words in Question 2 </em></p>
-  <p align= "center"><em> 7. word_Common = Number of common unique words in Question 1 and Question 2 </em></p>
-  <p align= "center"><em> 8. word_Total = Total num of words in Question 1 + Total num of words in Question 2 </em></p>
-  <p align= "center"><em> 9. word_share = (word_common)/(word_Total) </em></p>
-  <p align= "center"><em> 10. freq_q1+freq_q2 = sum total of frequency of qid1 and qid2 </em></p>
-  <p align= "center"><em> 11. freq_q1-freq_q2 = absolute difference of frequency of qid1 and qid2 </em></p>
-
-  <div align= "center">|</div>
-  <div align= "center">|</div>
-  <div align= "center">\/</div>
-
-  <h3 align= "center">Preprocessing of text (Natural Language Processing)</h3>
-  <p align= "center"><em> - Removing html tags </em></p>
-  <p align= "center"><em> - Removing Punctuations </em></p>
-  <p align= "center"><em> - Performing stemming </em></p>
-  <p align= "center"><em> - Removing Stopwords </em></p>
-  <p align= "center"><em> - Expanding contractions etc. </em></p>
-
-  <div align= "center">|</div>
-  <div align= "center">|</div>
-  <div align= "center">\/</div>
-
-  <h3 align= "center">Advanced Feature Extraction (NLP and Fuzzy Features)</h3>
-
-
-  <div align= "center">|</div>
-  <div align= "center">|</div>
-  <div align= "center">\/</div>
-
-  <h3 align= "center">Visualization of Data</h3>
-
-  <div align= "center">|</div>
-  <div align= "center">|</div>
-  <div align= "center">\/</div>
-
-  <h3 align= "center">Featurizing text data with tfidf weighted word-vectors </h3>
+  <h3 align= "center"><strong>Prediction using Random Model </strong></h3>
 
   <div align= "center">|</div>
   <div align= "center">|</div>
   <div align= "center">\/</div>
 
   <h3 align= "center">Building Machine Learning Models</h3>
-  <p align= "center"><em> - Building a random model (Finding worst-case log-loss)  </em></p>
-  <p align= "center"><em> - Logistic Regression with hyperparameter tuning   </em></p>
-  <p align= "center"><em> - Linear SVM with hyperparameter tuning  </em></p>
-  <p align= "center"><em> -  XGBoost </em></p>  
+  <p align= "center"><em> - Baseline model is naive bayes hyperparameter tuned model  </em></p>
+  <p align= "center"><em> - K Nearest Neighbhor with hyperparameter tuning   </em></p>
+  <p align= "center"><em> - Logistic regression with and without class balancing and hyperparameter tuning  </em></p>
+  <p align= "center"><em> - Linear support vector machine with hyperparameter tuning </em></p> 
+  <p align= "center"><em> - Random forest classifier with hyperparameter tuning </em></p>  
+  <p align= "center"><em> - Linear support vector machine with hyperparameter tuning and one hot encoding as well as response coding </em></p>  
+  <p align= "center"><em> - Stacking classifier </em></p>  
+  <p align= "center"><em> - Maximum voting classifier </em></p>  
+  <p align= "center"><em> - Feature importance from all above models </em></p>  
 
 
 
