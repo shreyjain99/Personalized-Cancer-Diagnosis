@@ -54,25 +54,15 @@
 
 <br>
 
-
-<p>
-<strong>Features in the dataset :</strong>
-</p>
-<pre>
-<b>Id</b> - the id of a training set question pair<br />
-<b>qid1, qid2</b> - unique ids of each question (only available in train.csv)<br />
-<b>question1, question2</b> - the full text of each question<br />
-<b>is_duplicate</b> - the target variable, set to 1 if question1 and question2 have essentially the same meaning, and 0 otherwise.<br />
-</pre>
-
 <br />
 
-<br>
 
 <p>
 <strong>ML Problem Formulation :</strong>
 </p>
-<p> <strong>It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not.</strong> </p>
+<p> <strong>There are nine different classes a genetic mutation can be classified into => Multi class classification problem</strong> </p>
+<br>
+<p>Objective is to Predict the probability of each data-point belonging to each of the nine classes.</p>
 
 <br>
 <br>
@@ -81,8 +71,8 @@
 <strong>Performance metrics :</strong>
 </p>
 <ol>
-<li>log-loss </li>
-<li>Binary Confusion Matrix</li>
+<li>Multi class log-loss</li>
+<li>Confusion Matrix</li>
 </ol>
 
 <hr width="100%" size="2">
