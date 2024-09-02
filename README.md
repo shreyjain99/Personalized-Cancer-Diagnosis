@@ -11,7 +11,7 @@
 <br>
 
 <p>
-<strong>Real World/Business Objective :</strong> To identify which questions asked on Quora are duplicates of questions that have already been asked doing this could be useful to instantly provide answers to questions that have already been answered.
+<strong>Real World/Business Objective :</strong> Classify the given genetic variations/mutations based on evidence from text-based clinical literature.
 </p>
 
 <br>
@@ -20,17 +20,17 @@
 <strong>Constraints :</strong>
 </p>
 <ol>
-<li>High precision and recall </li>
-<li>No strict latency constraints</li>
-<li>Probabilistic output</li>
-<li>Interpretability is partially important</li>
+<li>Interpretability </li>
+<li>Probability of a data-point belonging to each class is needed</li>
+<li>No low-latency requirement</li>
+<li>High Precision (Errors can be very costly)</li>
 </ol>
 
 <br>
 
 <p>
-<strong>Get the data from :</strong> https://www.kaggle.com/c/quora-question-pairs
-<br>The data is hosted by Quora as a featured prediction competition on kaggle
+<strong>Get the data from :</strong> https://www.kaggle.com/c/msk-redefining-cancer-treatment/data
+<br>The data is provided by kaggle as Research Prediction Competition.
 </p>
 
 <br>
@@ -38,11 +38,18 @@
 <p>
 <strong>Data Overview :</strong>
 <br>
-<p> 
-- Data will be in a file Train.csv <br>
-- Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate <br>
-- Size of Train.csv - 60MB <br>
-- Number of rows in Train.csv = 404,290
+  <p>We have two data files: one conatins the information about the genetic mutations and the other contains the clinical evidence (text) that  human experts/pathologists use to classify the genetic mutations.Both these data files are have a common column called ID</p>
+<br>
+<p>
+    Data file's information:
+    <ul>
+        <li>
+        training_variants (ID , Gene, Variations, Class)
+        </li>
+        <li>
+        training_text (ID, Text)
+        </li>
+    </ul>
 </p>
 
 <br>
